@@ -5,7 +5,7 @@ body{
 	background: image-url('paper.png');
 }
 
-div{
+.card{
 	width: 400px;
 	height: 150px;
 	background: #FFF;
@@ -14,13 +14,21 @@ div{
 	background: inline-image('paper.png');
 }
 
+.fab{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: inline-image('paper.png');
+	margin: 50px auto;
+}
+
+
 
 .one{
 	z-index: 1;
 	@include filter(drop-shadow(0 .1em .15em rgba(0,0,0,.15))
 					drop-shadow(0 .1em .1em rgba(0,0,0,.24)));
-	background: #336699;
-
 }
 .two{
 	z-index: 2;
@@ -31,6 +39,7 @@ div{
 	z-index: 3;
 	@include filter(drop-shadow(0 1em 1em rgba(0,0,0,.19))
 					drop-shadow(0 .6em .3em rgba(0,0,0,.23)));
+	background: #9c27b0;
 }
 .four{
 	z-index: 4;
@@ -41,8 +50,9 @@ div{
 	z-index: 5;
 	@include filter(drop-shadow(0 1.9em 1.9em rgba(0,0,0,.3))
 					drop-shadow(0 1.5em .6em rgba(0,0,0,.22)));
-	background: #663399;
 }
+
+
 
 
 
