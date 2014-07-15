@@ -3,6 +3,7 @@
 body{
 	width: 100%;
 	background: image-url('paper.png');
+	margin: 0;
 }
 
 .card{
@@ -12,6 +13,14 @@ body{
 	margin: 50px auto;
 	position: relative;
 	background: inline-image('paper.png');
+}
+.top-nav{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background: inline-image('paper.png');
+	z-index: 10;
 }
 
 .fab{
