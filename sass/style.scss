@@ -7,7 +7,8 @@ body{
 }
 
 .card{
-	width: 400px;
+	width: 82%;
+	max-width: 600px;
 	height: 150px;
 	background: #FFF;
 	margin: 50px auto;
@@ -25,8 +26,8 @@ body{
 
 .fab{
 	position: relative;
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 	border-radius: 50%;
 	background: inline-image('paper.png');
 	margin: 50px auto;
@@ -48,7 +49,6 @@ body{
 	z-index: 3;
 	@include filter(drop-shadow(0 1em 1em rgba(0,0,0,.19))
 					drop-shadow(0 .6em .3em rgba(0,0,0,.23)));
-	background: #9c27b0;
 }
 .four{
 	z-index: 4;
