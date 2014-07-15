@@ -1,0 +1,49 @@
+@import "compass/css3";
+
+body{
+	width: 100%;
+	background: image-url('paper.png');
+}
+
+div{
+	width: 400px;
+	height: 150px;
+	background: #FFF;
+	margin: 50px auto;
+	position: relative;
+	background: inline-image('paper.png');
+}
+
+
+.one{
+	z-index: 1;
+	@include filter(drop-shadow(0 .1em .15em rgba(0,0,0,.15))
+					drop-shadow(0 .1em .1em rgba(0,0,0,.24)));
+	background: #336699;
+
+}
+.two{
+	z-index: 2;
+	@include filter(drop-shadow(0 .3em .3em rgba(0,0,0,.16))
+					drop-shadow(0 .3em .1em rgba(0,0,0,.23)));
+}
+.three{
+	z-index: 3;
+	@include filter(drop-shadow(0 1em 1em rgba(0,0,0,.19))
+					drop-shadow(0 .6em .3em rgba(0,0,0,.23)));
+}
+.four{
+	z-index: 4;
+	@include filter(drop-shadow(0 1.4em 1.4em rgba(0,0,0,.25))
+					drop-shadow(0 1em .5em rgba(0,0,0,.22)));
+}
+.five{
+	z-index: 5;
+	@include filter(drop-shadow(0 1.9em 1.9em rgba(0,0,0,.3))
+					drop-shadow(0 1.5em .6em rgba(0,0,0,.22)));
+	background: #663399;
+}
+
+
+
+
